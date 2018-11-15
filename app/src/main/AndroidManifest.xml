@@ -10,11 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
             <intent-filter android:label="github">
                 <action android:name="android.intent.action.VIEW" />
@@ -29,6 +24,14 @@
                 <data android:scheme="example"
                     android:host="gizmos" />
 
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".DummyExpandActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
         </activity>
